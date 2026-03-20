@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Input Data",
+        "description": "Specify the input expression data file. For 10x Genomics MTX format, also provide the accompanying gene names and cell barcodes files.",
+        "parameters": [
+            "input.file",
+            "gene.file",
+            "cell.file",
+            "transpose.input"
+        ],
+        "hidden": false
+    },
+    {
+        "name": "Model Selection",
+        "description": "Choose a built-in pre-trained CellTypist model for cell type annotation, or supply your own custom model file.",
+        "parameters": [
+            "builtin.model",
+            "custom.model.file"
+        ],
+        "hidden": false
+    },
+    {
+        "name": "Prediction Settings",
+        "description": "Configure how cell type labels are assigned to each cell, including single-label versus multi-label prediction and the probability threshold for assignment.",
+        "parameters": [
+            "prediction.mode",
+            "probability.threshold"
+        ],
+        "hidden": false
+    },
+    {
+        "name": "Majority Voting",
+        "description": "Optionally smooth predictions by majority voting within transcriptionally similar cell neighborhoods. Useful for reducing noise in ambiguous or transitional cell states.",
+        "parameters": [
+            "majority.voting",
+            "min.proportion"
+        ],
+        "hidden": false
+    },
+    {
+        "name": "Output Options",
+        "description": "Control the naming of output files and whether visualization plots (UMAP and dot plots) are generated alongside the annotation results.",
+        "parameters": [
+            "output.prefix",
+            "plot.results"
+        ],
+        "hidden": false
+    }
+]

@@ -1,0 +1,8 @@
+name: "CellTypist - Basic Functionality Test"
+module: celltypist
+params:
+  input.file: /Users/tmtabor/workspace/module-toolkit/generated-modules/celltypist_20260317_124734/data/demo_2000_cells.h5ad
+assertions:
+  diffCmd: diff
+  files:
+    - "predicted_labels.csv"
