@@ -1,6 +1,6 @@
 # GenePattern Module Manifest
 
-LSID=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.generated:40153:1
+LSID=urn:lsid:genepattern.org:module.analysis:00483:1
 name=CellTypist
 version=1.0.0
 author=GenePattern Team
